@@ -14,12 +14,16 @@ Toplam değişken sayısı: 25 (1 tanesi çıkarıldıktan sonra)
 Sayısal sütunlar: int64, float64 tipindeki sütunlar seçildi.
 Kategorik sütunlar: object tipindeki sütunlar.
 
+
+
 📊 2. Sayısal Değişkenlerin Özeti
 
 Sayısal sütunlara ilişkin temel istatistikler (ortalama, min, max, std) incelenmiştir. Bu veriler:
 Genel dağılımı,
 Standart sapma ile yayılımı,
 Aykırı değerlere dair ilk fikirleri vermektedir.
+
+
 
 
 📈 3. Sayısal Değişkenlerin Dağılımı
@@ -34,11 +38,15 @@ Bazı değişkenlerde tek tepe noktası (unimodal) gözlenmiştir.
 Aykırı değerler bazı grafiklerde dikkat çekmiştir (örneğin Flight Distance).
 
 
+
+
 🧩 4. Kategorik Değişkenlerin Özeti
 Kategorik sütunların mod (en sık değer), benzersiz değer sayısı ve en sık tekrar eden değerin frekansı gösterildi.
 Her kategorik değişken için ayrıca bar grafikleri çizildi. Bu sayede:
 Sınıf dengesizlikleri (örneğin satisfaction, Gender) kolayca gözlemlendi.
 Bazı sınıflar baskın olabilir; bu da modelleme aşamasında dikkate alınmalıdır.
+
+
 
 
 ❗ 5. Eksik Değer Analizi
@@ -51,6 +59,10 @@ Eksik veri oranı görsel olarak barplot ile gösterildi.
 Arrival Delay in Minutes gibi bazı sütunlarda düşük oranda eksik veri bulundu.
 Eksik veri oranı genellikle %5’in altında. Bu oran, basit işlemlerle (median doldurma gibi) tolere edilebilir.
 
+
+
+
+
 🚨 6. Aykırı Değer Analizi (Outliers)
 Her sayısal sütun için IQR yöntemiyle (Q1 - 1.5IQR, Q3 + 1.5IQR) aykırı değerler bulundu.
 Her sütun için aykırı değer sayısı ve oranı hesaplandı.
@@ -60,12 +72,18 @@ Aykırı oranı %10’dan fazla olan değişkenler dikkatle ele alınmalıdır.
 Boxplot’lar ile her sütundaki uç değerler görselleştirildi.
 Özellikle Flight Distance, Departure Delay, Arrival Delay gibi değişkenlerde ciddi aykırılıklar bulunmakta.
 
+
+
+
 🔚 Genel Değerlendirme
 Kategori	Gözlem
 Veri Kalitesi	Yüksek (çok az eksik veri)
 Aykırı Değerler	Bazı değişkenlerde yüksek
 Sütunlar	Çoğu anlamlı ve modellemeye uygun
 Görselleştirme	Dağılımlar, kategorik yapı net bir şekilde gösterilmiş
+
+
+
 
 ✅ Öneriler – Bir Sonraki Adım İçin:
 Eksik veriler:

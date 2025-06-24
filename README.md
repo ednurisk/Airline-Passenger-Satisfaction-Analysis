@@ -1,4 +1,5 @@
 ✈️ Airline Passenger Satisfaction – Veri Analizi Raporu
+
 📌 1. Veri Seti Genel Bilgisi
 Veri seti Kaggle üzerinden yüklenmiştir: /kaggle/input/airline-passenger-satisfaction/train.csv
 
